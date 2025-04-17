@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 2px;
+}
+body{
+    font-size: 24px;
+    color: white;
+    height: 100vh;
+    text-align: center;
+     display: flex;
+    flex-direction:column ; 
+} 
+.flex-header{
+    background-color: aqua;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.flex-main{
+display: flex;
+flex: 1;
+
+}
+.flex-nav{
+    background-color: deeppink;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-article{
+    background-color: darkgreen;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-aside{
+    background-color: darkorchid;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-footer{
+    background-color: lightgreen;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+    </style>
+</head>
+<body>
+    <header class="flex-header">
+          Devi Bala Mandir E.M.H.School
+    </header>
+    <main class="flex-main">
+        <nav class="flex-nav">
+           Sections : A,B,C,D
+        </nav>
+        <article class="flex-article">
+             Class : LKG-10th
+        </article>
+        <aside class="flex-aside">
+           State Board
+        </aside>
+    </main>
+    <footer class="flex-footer">Headmam : Sujatha</footer>
+</body>
+</html>

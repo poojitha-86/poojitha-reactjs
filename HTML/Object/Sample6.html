@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="person"></h1>
+    <script>
+        var children = {
+            name : "jishi" ,
+            age : 24,
+            work : "IT job" ,
+            place : "Coimbathore" 
+        };
+
+        console.log(person);
+        console.log(children);
+
+        document.write(
+            children.name +
+            children.age +
+            children. work +
+            children.place +
+            "<br>"
+        );
+        
+        document.write(
+            "name :" +
+            children.name +
+            "<br> age : "+
+            children.age +
+            "<br> work : "+
+            children. work +
+            "<br> place :"+
+            children.place 
+        );
+
+        document.getElementById("person").innerHTML = 
+        "name :" +
+            children.name +
+            "<br> age : "+
+            children.age +
+            "<br> work : "+
+            children. work +
+            "<br> place :"+
+            children.place ;
+            
+    </script>
+</body>
+</html>

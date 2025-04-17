@@ -1,0 +1,59 @@
+.container {
+    border: 3px solid;
+    width: 700px;
+    margin: auto;
+  } 
+  header {
+    border: 3px solid;
+    background-color: rgb(240, 46, 46);
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    border: 3px solid;
+    background-color: skyblue;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  div#subSection {
+    overflow: auto;
+    /* border: 3px solid; */
+    margin: 5px;
+    text-align: center;
+  }
+  div#child1 {
+    width: 480px;
+    float: left;
+  }
+  section {
+    border: 3px solid;
+    height: 100px;
+    background-color: rgb(250, 173, 79);
+  }
+  article {
+    border: 3px solid;
+    height: 100px;
+    margin-top: 10px;
+    background-color: rgb(238, 136, 10);
+  }
+  aside {
+    border: 3px solid;
+    text-align: center;
+    background-color: rgb(230, 84, 208);
+    width: 202px;
+    float: right;
+    height: 215px;
+  }
+  footer {
+    border: 3px solid;
+    text-align: center;
+    background-color: gray;
+    margin: 5px;
+    height: 25px
+  }
+  img {
+    width: 90px;
+}
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid;
+            display: flex;
+            flex-direction:column;
+            
+        }
+        .flex-item{
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-align: center;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item item-One">item-One</div>
+        <div class="flex-item item-Two">item-Two</div>
+        <div class="flex-item item-Three">item-Three</div>
+        <div class="flex-item item-Four">item-Four</div>
+        <div class="flex-item item-Five">item-Five</div>
+    </div>
+</body>
+</html>

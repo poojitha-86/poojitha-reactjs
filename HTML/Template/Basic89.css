@@ -1,0 +1,137 @@
+div#row1 {
+    background: #333333;
+   }
+   header {
+    width: 800px;
+    margin: auto;
+    background: #333333;
+    color: white;
+    overflow: auto;
+   }
+   div#basic {
+    width: 205px;
+    float: left;
+    margin: 20px;
+   }
+   #basic h2 {
+    margin: 0;
+   }
+   #basic p {
+    margin: 0;
+    font-size: 13px;
+   }
+   nav {
+    color: orange;
+    width: 525px;
+    float: right;
+    margin: 15px;
+    background: #242525;
+    font-size: 11px;
+   }
+   nav ul li {
+    display: inline;
+    margin-right: 31px;
+   }
+ 
+   div#row2 {
+    width: 800px;
+    margin: auto;
+    margin-top: 15px;
+    
+   }
+   #row2 img {
+    width: 799px;
+    height: 299px;
+   }
+   div#row3{
+     display: flex;
+     width: 800px;
+     justify-content: center;
+     font-size: 16px;
+     height: 150px;
+     margin: auto;
+     margin-top: 15px;
+   }
+  .one{
+    width: 200px;
+    }
+  .p a{
+    text-decoration: none;
+    color: #FF9900;
+    font-size: 12px;
+    }
+    .p{
+            margin-left: 100px;
+        }
+    strong,p{
+    color: #979797;
+    font-size: 12px;
+   }
+  
+   div#row4{
+    display: flex;
+    width:900px ;
+    margin: auto;
+   }
+   .childs {
+    float: left;
+    width: 284px;
+    margin-right: 11px;
+   }
+   .child3 {
+    float: right;
+    width: 227px;
+  }
+  div#row5 {
+    width: 800px;
+    margin: auto;
+    overflow: auto;
+}
+aside#aside {
+    width: 250px;
+    float: right;
+}
+article {
+    width: 530px;
+    float: left;
+}
+li {
+    list-style-type: none;
+    border-bottom: 1px solid;
+}
+h4.heading {
+    border-bottom: 1px solid;
+}
+figure {
+    float: left;
+}
+div#row6 {
+    width: 800px;
+    margin: auto;
+    background-color: #1b1b1b;
+    color: white;
+    height: 55px;
+  }
+  .footer-bottom {
+    font-size: 13px;
+    width: 800px;
+    height: 55px;
+  }
+  
+  footer#footer {
+    background-color: #1f1e1e;
+  }
+  p.left{
+    float: left;
+  }
+  p.Rights {
+    float: right;
+}
+.child2 {
+    float: left;
+}
+.child1 {
+    float: left;
+}
+
+

@@ -1,0 +1,40 @@
+div#container {
+    border: 3px solid;
+    margin: auto;
+    width: 700px;
+}
+header {
+    border: 2px solid;
+    margin: 5px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    height: 20px;   
+}
+aside {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: #1c7072;
+    text-align: center;
+    height: 170px;
+    width: 340px;
+    float: right;
+}
+article {
+    border: 2px solid;
+    color: white;
+    background-color: #f96780;
+    text-align: center;
+    width: 340px;
+    margin: 5px;
+    height: 170px;
+}
+footer {
+    border: 2px solid;
+    margin: 5px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    height: 20px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+    label{
+        color: white;
+    
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .tr,td {
+         padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <form style=" background-color: rgb(20, 111, 146); width: 600px;" action="">
+        <h1 >Application Form </h1>
+        <br/>
+        <br/>
+        <tr>
+            <td>
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" id="fname">
+        </td>
+        </tr>
+        <tr>
+            <td>
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" id="lname">
+        </td>
+        </tr>
+        <br/>
+        <br/>
+        <label for="dob">Date of birth :</label>
+        <input type="date" name="age" id="dob">
+        <label for="Age">Age :</label>
+        <input type="number" id="age">  
+        <br/><br/>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="fmale">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="email">Email Address :</label>
+        <input type="email" name="email" id="email" placeholder="Enter email address">
+        <br/><br/>
+        <label for="positions">Positions Available :</label>
+        <label for="juniour"><input type="radio" name="positions" id="junior" value="Junior Developer">Junior Developer</label>
+        <label for="mid"><input type="radio" name="positions" id="mid" value="Mid-level Developer">Mid-level Developer</label>
+        <label for="senior"><input type="radio" name="positions" id="senior" value="Junior Developer">Senior Developer</label>
+        <br/><br/>
+        <label for="Languages">Programming Languages :</label>
+        <label for="java"><input type="checkbox" value="Java" id="java">Java</label>
+        <label for="javaScript"><input type="checkbox" value="JavaScript" id="javaScript">JavaScript</label>
+        <label for="python"><input type="checkbox" value="python" id="python">Python</label>
+        <br/><br/>
+        <label for="password">Password :</label>
+        <input type="password">
+        <label for="confirm password">Confirm Password:</label>
+        <input type="password">
+        <br/>
+        <br/>
+        <div class="button">
+        <button type="submit" style="background-color: orangered; width:90px">Submit</button>
+        <button type="reset" style="background-color: orangered;  width:90px">Reset</button>
+        </div>
+        <br/><br/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        counter-reset: section;
+    }
+    h2::before{
+        counter-increment: section;
+        content: "Dog  >  " counter(section)
+    }
+   </style>
+</head>
+<body>
+    <h1>CSS counters</h1>
+
+    <h2>Lucky</h2>
+    <h2>CJ</h2>
+    <h2>Tyson</h2>
+    <h2>Bittu</h2>
+    <h2>Leo</h2>
+</body>
+</html>

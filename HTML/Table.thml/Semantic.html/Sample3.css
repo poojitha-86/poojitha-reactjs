@@ -1,0 +1,56 @@
+.container {
+    border: 3px solid;
+    width: 800px;
+    margin: auto;
+    }
+    header {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    }
+    nav {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    }
+    section {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 400px;
+    height: 70px;
+    }
+    article {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    }
+    aside {
+    border: 2px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    }
+    footer {
+    border: 2px solid;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    }

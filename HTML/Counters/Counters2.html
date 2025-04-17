@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1::before{
+            counter-increment: section;
+            content: "section" counter(section) " : ";
+        }
+        h2::before{
+            counter-increment: subsection;
+            content: " sub - " counter(section) " . " counter(section);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS counters</h1>
+
+    <h2>Lucky</h2>
+    <h2>CJ</h2>
+    <h2>Tyson</h2>
+    <h2>Bittu</h2>
+    <h2>Leo</h2>
+    <hr>
+
+    <h1>CSS counters</h1>
+
+    <h2>Lucky</h2>
+    <h2>CJ</h2>
+    <h2>Tyson</h2>
+    <h2>Bittu</h2>
+    <h2>Leo</h2>
+</body>
+</html>

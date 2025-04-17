@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 20px;
+      }
+      @media  screen and (max-width : 400px) {
+        .column{
+          width: 25%;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 620px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column" style="background-color: palevioletred">
+          <h2>Ugadi</h2>
+          <p>Happy ugadi</p>
+        </div>
+        <div class="column" style="background-color: palevioletred">
+            <h2>Ugadi</h2>
+            <p>Happy ugadi</p>
+        </div>
+        <div class="column" style="background-color: palevioletred">
+            <h2>Ugadi</h2>
+            <p>Happy ugadi</p>
+        </div>
+        <div class="column" style="background-color: palevioletred">
+            <h2>Ugadi</h2>
+            <p>Happy ugadi</p>
+        </div>
+    </div> 
+</body>
+</html>

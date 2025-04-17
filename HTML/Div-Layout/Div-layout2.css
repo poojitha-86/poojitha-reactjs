@@ -1,0 +1,42 @@
+div#container {
+    border: 3px solid gray;
+    width: 800px;
+    margin: auto;
+  }
+  div#headeSection {
+    background: rgb(17, 17, 124);
+    color: white;
+    padding: 13px;
+    font-size: 35px;
+    text-align: center;
+    margin: 7px;
+  }
+  div#subSection {
+    margin: 7px;
+    overflow: auto;
+  }
+  div#districtNames {
+    background:yellowgreen;
+    width: 190px;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+  }
+  div#description {
+    width: 560px;
+    float: right;
+  }
+  li {
+    line-height: 2;
+  }
+  div#footer {
+    background:rgb(17, 17, 124);
+    color: white;
+    padding: 1px;
+    margin: 7px;
+    text-align: center;
+  }
+  img {
+    width: 50px;
+}
+  

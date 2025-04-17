@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="me">Food</h2>
+    <script>
+        var food = {
+            item : 5,
+            taste : "good" ,
+            typeOne :"Veg",
+            typeTwo : "NV",
+            time : 15,
+        };
+
+        console.log(food);
+        document.getElementById("me").innerHTML;
+        document.write(
+            " <br> Item :" +
+            food.item +
+            "<br> Taste :" +
+            food.taste +
+            "<br> TypeOne :" +
+            food.typeOne +
+            "<br> TypeTwo :" +
+            food.typeTwo +
+            "<br> Time :" +
+            food.time 
+        );
+        document.getElementById("me").innerHTML = 
+        " <br> Item :" +
+            food.item +
+            "<br> Taste :" +
+            food.taste +
+            "<br> TypeOne :" +
+            food.typeOne +
+            "<br> TypeTwo :" +
+            food.typeTwo +
+            "<br> Time :" +
+            food.time ;
+    </script>
+</body>
+</html>

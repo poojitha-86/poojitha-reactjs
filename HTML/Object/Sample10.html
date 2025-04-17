@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ins"></h1>
+    <script>
+        var institute = {
+            name : "Vinayaka Type Institute",
+            from : 2023,
+            state : "Andhra pradesh",
+            city : "Chittoor",
+            place : " santhapet",
+            strength : 20,
+            meachine : 9,
+        };
+        
+        var result = "";
+        for( our in institute){
+            console.log(institute[our]);
+            document.write(our + ":" + institute[our] + "<br>");
+            result = result + our + ":" + institute[our] +"<br>";
+        };
+        document.getElementById("ins").innerHTML=result;
+    </script>
+</body>
+</html>

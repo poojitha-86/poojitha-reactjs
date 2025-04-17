@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Basic-template.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div id="row1">
+          <header>
+            <div id="basic">
+              <h2>Classic</h2>
+            </div>
+            <nav>
+              <ul>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li> <button style="color: white; background-color: orange; border: 0;">Home</button></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <div id="row2">
+            <header id="image">
+            </header>
+        </div>
+        <div id="row3">
+            <h2>Introduction</h2>
+            <p>A Garden is the best place in the house
+            according to me. As it is the only place where 
+            a person can get relief from a busy life. </p>
+        </div>
+        <div id="row4">
+            <div class="childs">
+                <figure><img src="../img1.jpg" alt=""></figure>
+                <figcaption>
+                    <strong><b>Lorem ipsum dolor#1</b></strong>
+                    <p> Moreover having a garden in the house
+                        welcomes many health benefits. </p>
+                        <button style="background-color: orange; color: white;border: 0; ">Detail >></button>
+                </figcaption>
+            </div>
+            <div class="childs">
+                <figure><img src="../img1.jpg" alt=""></figure>
+                <figcaption>
+                    <strong><b>Lorem ipsum dolor#1</b></strong>
+                    <p> Moreover having a garden in the house
+                        welcomes many health benefits.</p>
+                        <button style="background-color: orange; color: white;border: 0; ">Read More >></button>
+                </figcaption>
+            </div>
+            <div class="child2">
+                <figure><img src="../img1.jpg" alt=""></figure>
+                <figcaption>
+                    <strong><b>Lorem ipsum dolor#1</b></strong>
+                    <p> Moreover having a garden in the house
+                        welcomes many health benefits. </p>
+                        <button style="background-color: orange; color: white;border: 0; ">Detail >></button>
+                </figcaption>
+            </div>
+            <div class="child2">
+                <figure><img src="../img1.jpg" alt=""></figure>
+                <figcaption>
+                    <strong><b>Lorem ipsum dolor#1</b></strong>
+                    <p> Moreover having a garden in the house
+                        welcomes many health benefits. </p>
+                        <button style="background-color: orange; color: white;border: 0; ">Read More >></button>
+                </figcaption>
+            </div>
+        </div>
+        <div id="row5">
+            <article>
+                <div class="child3">
+                   <h3>Pellentesque fermentum mauris et posure</h3>
+                      <p>Vivamus accumsan blandit ligula</p>
+                      <figure><img src="../doraf.jpg" alt="" style="width: 350px;  height: 200px; float: left;" ></figure>
+                      <figcaption>
+                        <p>Paragraphs are a collection of sentences. 
+                        They are used in writing to introduce new 
+                        sections of a story, characters or pieces 
+                        of information. </p>
+                        <p> We should emulate great personalities like 
+                        Edison, who worked day and night for his inventions
+                        .The president, prime minister, our teachers, parents,
+                        etc., have all worked hard to reach their positions.</p>
+                        <p> History has proved that one who works hard will 
+                        definitely be successful. There might be hurdles
+                        and failures in between, but one must not give 
+                        up and must keep on going.</p>
+                        <button style="background-color: orange;color: white;border:0;">READ MORE >></button>
+                      </figcaption>
+                </div>
+            </article>
+            <aside>
+                <div id="aside">
+                    <div class="child4">
+                   <h2>Caregories</h2>
+                   <ul id="child4">
+                    <li>First only</li>
+                    <li>Second only</li>
+                    <li>Third only</li>
+                    <li>Fourth only</li>
+                    <li>Fifth only</li>
+                  </ul>
+                </div>
+                <div class="child5">
+                   <h2>UsefulLinks</h2>
+                   <ul id="child4">
+                    <li>First only</li>
+                    <li>Second only</li>
+                    <li>Third only</li>
+                    <li>Fourth only</li>
+                    <li>Fifth only</li>
+                  </ul>
+                </div>
+                </div>
+            </aside>
+            <div>
+            <section id="last">
+                <h2>Related Posts</h2>
+                <figure class="middle"><img src="../wall.jpg" alt="" class="you"></figure>
+                <figcaption class="end">
+                    <strong ><b>Lorem ipsum dolor</b></strong>
+                    <p>Paragraphs are a collection of sentences. 
+                        They are used in writing.</p>
+                </figcaption>
+                <figure class="middle"><img src="../wall.jpg" alt="" class="you"></figure>
+                <figcaption class="end">
+                    <strong><b>Lorem ipsum dolor</b></strong>
+                    <p>Paragraphs are a collection of sentences. 
+                        They are used in writing.</p>
+                </figcaption>
+                <figure class="middle"><img src="../wall.jpg" alt="" class="you"></figure>
+                <figcaption class="end">
+                    <strong><b>Lorem ipsum dolor</b></strong>
+                    <p>Paragraphs are a collection of sentences. 
+                        They are used in writing.</p>
+                </figcaption>
+            </section>
+        </div>
+        </div>
+        <br><br>
+        <div id="row6">
+                <article class="row66">
+                    <div class="childone">
+                        <h2>Proin eu posuere felis</h2>
+                        <p id="group">
+                            We should emulate great personalities like 
+                            Edison, who worked day and night for his inventions
+                            .The president, prime minister, our teachers, parents,
+                            etc.,
+                            <br>
+                            We should emulate great personalities like 
+                            Edison, who worked day and night for his inventions
+                            .The president, prime minister, our teachers, parents,
+                            etc.,
+                            <br>
+                            Danny Egg(Exective)
+                        </p>
+                        
+                    </div>
+                    <div class="navone">
+                        <h2>Null tortor dolor</h2>
+                        <ul class="navonee">
+                            <li class="first">Multi-page</li>
+                            <li class="first">Bootstrap</li>
+                            <li class="first">Responsive</li>
+                            <li class="first">Blong 2-column</li>
+                            <li class="first">Blong 3-column</li>
+                            <li class="first">Blong 4-column</li>
+                        </ul>
+                    </div>
+                </article>
+             <div>
+                <aside>
+                     <div class="childthree">
+                        <h2>Etiam mollis ornare</h2>
+                        <p>Paragraphs are a collection of sentences. 
+                        They are used in writing.Paragraphs are a 
+                        collection.</p>
+                        <hr>
+                        <p>Paragraphs are a collection of sentences. 
+                        They are used in writing.Paragraphs are a 
+                        collection.
+                        </p>
+                        <hr>
+                        <p>Paragraphs are a collection of sentences. 
+                         They are used in writing.Paragraphs are a 
+                         collection.
+                         </p>
+                         <button style="background-color: orange; color: white; border: 0;">READ MORE</button>
+                         <hr>
+                     </div>
+                     <div class="childfour">
+                        <h2>Fusce Non turpis</h2>
+                        <figure><img src="../garden.jpg" alt="" class="childfour"></figure>
+                        <figcaption class="now">
+                        <p class="childfour">Paragraphs are a collection of sentences. 
+                            They are used in writing.</p>
+                            <button style="background-color: orange; color: white; border: 0;">BROWSE</button>
+                        </figcaption>
+                     </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

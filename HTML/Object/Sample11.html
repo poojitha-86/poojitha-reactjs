@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="bro"></h2>
+    <script>
+        var brother = {
+         name : "Durga",
+         age :  12,
+         class : 7,
+         school : "Brundhavan",
+         place : "Santhapet",
+         sister : 1,
+         sisterName : "Indhu",
+         motherName : "Rekha",
+         fatherName : "Chinna"
+        }; 
+
+        var result = "";
+        for(bro in brother){
+            console.log(brother[bro]);
+            document.write(bro+ " : " + brother[bro] + "<br>");
+            result = result + bro+ " : " + brother[bro] +"<br>";
+        };
+
+        document.getElementById("bro").innerHTML=result;
+    </script>
+</body>
+</html>

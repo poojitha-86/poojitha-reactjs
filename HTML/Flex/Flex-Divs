@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector */
+*{
+    margin: 2px;
+}
+body{
+    font-size: 24px;
+    color: white;
+    height: 100vh;
+    text-align: center;
+     display: flex;
+    flex-direction:column ; 
+} 
+.flex-header{
+    background-color: palegreen;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.flex-main{
+display: flex;
+flex: 1;
+
+}
+.flex-nav{
+    background-color: purple;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-article{
+    background-color: pink;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-aside{
+    background-color: orange;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-footer{
+    background-color: skyblue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+    </style>
+</head>
+<body>
+    <header class="flex-header">
+        HEADER
+    </header>
+    <main class="flex-main">
+        <nav class="flex-nav">
+            SIDENAV
+        </nav>
+        <article class="flex-article">
+            Main Content
+        </article>
+        <aside class="flex-aside">SiDEBAR</aside>
+    </main>
+    <footer class="flex-footer">Footer</footer>
+</body>
+</html>

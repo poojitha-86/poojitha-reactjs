@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="sis"></h3>
+    <script>
+        var sister = {
+            name : "Bhavi" ,
+            age : 16 ,
+            class : 11 ,
+            state : "TN" ,
+            pincode : 517001 , 
+        };
+        var result = "";
+        console.log(sister);
+        for(bhavi in sister) {
+            console.log(sister[bhavi]);
+            document.write(bhavi + " : " + sister[bhavi] + "<br>");
+
+            result = result + bhavi + " : " + sister[bhavi] + "<br>" ;
+        };
+        document.getElementById("sis").innerHTML = result;
+        console.log(result);
+    </script>
+</body>
+</html>
