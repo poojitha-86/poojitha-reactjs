@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="one"></ul>
+    <script>
+        var names = [
+            "Lucky",
+            "Tyson",
+            "Bittu",
+            "Babblu",
+            "Maggie",
+            "LEO"
+        ];
+
+        for(i=0;i < names.length;i++){
+            var myli = document.createElement("li");
+            myli.innerHTML= names[i];
+            document.getElementById("one").appendChild(myli);
+        };
+
+        var results = names.find(function(first){
+            return first === "Bittu";
+        });
+
+        var results = names.filter(function(second){
+            return second === "Tyson";
+        })
+        console.log(results);
+    </script>
+</body>
+</html>
