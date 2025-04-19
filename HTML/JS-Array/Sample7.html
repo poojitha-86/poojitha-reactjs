@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="For"></div>
+    <script>
+        var students = [
+            "Reshma",
+            "Monika",
+            "Priya",
+            "Sathya"
+        ];
+        for(i=0;i<students.length;i++){
+           var myli=document.createElement("li");
+           myli.innerHTML=students[i];
+           document.getElementById("For").appendChild(myli); 
+        };
+
+        var results = students.find(function(she){
+            return she === "Reshma";
+        });
+
+        var results = students.filter(function(she){
+            return she === "Priya";
+        });
+
+        document.write(results);
+        console.log(results);
+    </script>
+</body>
+</html>
