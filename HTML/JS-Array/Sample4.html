@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="MYUL"></ul>
+    <script>
+        var friends = [
+            "Jishi",
+            "Pooji",
+            "Sindhu",
+            "Durga",
+            "Nandini",
+            "Varshi"
+        ];
+         
+        for(i=0;i<friends.length;i++){
+            var MYLi = document.createElement("li");
+            MYLi.innerHTML=friends[i];
+            document.getElementById("MYUL").appendChild(MYLi);
+        };
+
+        var results = friends.find(function(name){
+            // console.log(name);
+            return name === "Durga";
+        });
+
+        var results = friends.filter(function(val){
+            // console.log(val);
+            return val ==="Sindhu";
+        });
+        console.log(results);
+    </script>
+</body>
+</html>
