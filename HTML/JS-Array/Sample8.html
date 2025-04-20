@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Class"></div>
+    <script>
+        var food = [
+            "Dosa",
+            "Idly",
+            "Pongal",
+            "Chicken",
+            "Biriyani"
+        ];
+
+        for(i=0; i<food.length; i++){
+            var myli = document.createElement("li");
+            myli.innerHTML = food[i];
+            document.getElementById("Class").appendChild(myli); 
+        };
+
+        // var results = food.find(function(now){
+        //     return now === "Chicken";
+        // });
+        
+        var results = food.filter(function(now){
+            return now === "Pongal";
+        });
+        console.log(results);
+        document.write(results);
+    </script>
+</body>
+</html>
