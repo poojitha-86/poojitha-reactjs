@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="All"></ul>
+    <script>
+        var colors = [
+            "Black",
+            "White",
+            "Pink",
+            "Blue",
+            "Purple"
+        ];
+
+        for(i=0;i<colors.length;i++){
+         var myli = document.createElement("li");
+         myli.innerHTML=colors[i];
+         document.getElementById("All").appendChild(myli);
+        };
+
+        var results = colors.find(function(first){
+            return first === "White";
+        });
+
+        var results = colors.filter(function(first){
+            return first === "Black";
+        });
+
+        console.log(results);
+
+    </script>
+</body>
+</html>
