@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        var colors = [
+            "Black",
+            "White",
+            "Pink",
+            "Blue",
+            "Purple"
+        ];
+
+        colors.forEach(function(me){
+            document.write(me + "<br>");
+            return me;
+        });
+
+        // var results = colors.map(function(me){
+        //     return me ;
+        // });
+        // console.log(results);
+
+        // var index = colors.findIndex(function(me){
+        //     return me === "Pink";
+        // });
+        // console.log(index);
+
+        // var results = colors.includes("peach");
+        // console.log(results);
+
+        var results= colors.some(function(me){
+            return me.length === 4 ;
+        });
+        console.log(results);
+     </script>
+</body>
+</html>
