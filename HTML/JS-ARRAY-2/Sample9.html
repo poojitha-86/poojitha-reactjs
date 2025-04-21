@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var digits = [11,22,33,44,55,66];
+
+        var results = digits.reduce(function(a,b){
+            console.log(a,b);
+            return a+b;
+        });
+
+        var results = digits.every(function( FOR){
+            return FOR.length === 2;
+        });
+        console.log(results);
+    </script>
+</body>
+</html>

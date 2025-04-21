@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [101,106,202,204,303,306];
+
+        var results = numbers.reduce(function(a,b){
+            console.log(a,b);
+            return a+b;
+        });
+
+        var results = numbers.every(function(Few){
+            return Few.length === 4;
+        });
+        console.log(results);
+    </script>
+</body>
+</html>
