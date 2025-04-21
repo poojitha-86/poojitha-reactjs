@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var names = [
+            "Lucky",
+            "Tyson",
+            "Bittu",
+            "Babblu",
+            "Maggie",
+            "LEO"
+        ];
+
+        names.forEach(function(For){
+         document.write( For + "<br>");
+         return For;
+        });
+
+        var results = names.map(function(For){
+            return For;
+        });
+        console.log(results);
+
+        var index = names.findIndex(function(For){
+            return For === "Bittu";
+        });
+        console.log(index);
+
+        var results = names.includes("LEO");
+        console.log(results);
+
+        var results = names.some(function(For){
+            return For.length === 3;
+        });
+        console.log(results);
+    </script>
+</body>
+</html>
