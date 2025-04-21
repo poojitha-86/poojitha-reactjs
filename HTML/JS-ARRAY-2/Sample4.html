@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  people = [
+            "First Person",
+            "Second Person",
+            "Third Person",
+            "Fourth Person",
+            "Fifth Person"
+        ];
+
+        people.forEach(function(then){
+            document.write(then +"<br>");
+            return then;
+        });
+
+        var results = people.map(function(me){
+            return me;
+        });
+        console.log(results);
+
+        var index = people.findIndex(function(me){
+            return me === "Fourth Person";
+        });
+        console.log(index);
+
+        var results = people.map(function(me){
+            return me;
+        });
+        console.log(results);
+
+        var results = people.includes("Fifth Person");
+        console.log(results);
+
+        var results = people.some(function(me){
+            return me.length === 3;
+        });
+        console.log(results);
+    </script>
+</body>
+</html>
