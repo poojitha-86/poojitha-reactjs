@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var food = [
+            "Dosa",
+            "Idly",
+            "Pongal",
+            "Chicken",
+            "Biriyani"
+        ];
+
+        var results = food.forEach(function(you){
+            document.write(you + "<br>");
+            return you;
+        });
+
+        // var results = food.map(function(you){
+        //     return  you;
+        // });
+        // console.log(results);
+
+        // var results = food.findIndex(function(you){
+        //     return you === "Chicken";
+        // });
+        // console.log(results);
+
+        // var results = food.some(function(you){
+        //     return you.length === 4;
+        // });
+        // console.log(results);
+
+        var results = food.includes("them");
+        console.log(results);
+    </script>
+</body>
+</html>
