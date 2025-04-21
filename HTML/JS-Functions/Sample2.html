@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Most"></h1>
+    <script>
+        function signIn(){}
+        function sighUp(){}
+        function search(){}
+
+        var myAllfunctions = {
+            signIn:function() {},
+            sighUp:function(){
+               console.log("Had your breakfast");
+            },
+            search:function(){
+                document.write("What special for it"); 
+                console.log("What special for it");
+            },
+            enter:function(){
+                console.log("Okay enjoy your day");
+                document.getElementById("Most").innerHTML="Okay enjoy your day";
+            },
+        };
+
+        myAllfunctions.sighUp();
+        myAllfunctions.search();
+        myAllfunctions.enter();
+    </script>
+</body>
+</html>

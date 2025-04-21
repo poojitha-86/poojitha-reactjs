@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first"></h1>
+    <script>
+        function signIn(){}
+        function sighUp(){}
+        function search(){}
+
+        var myAllfunctions = {
+            signIn:function() {},
+            sighUp:function(){
+               console.log("Hi I am sighUp");
+            },
+            search:function(){
+                document.write("Iam from object"); 
+            },
+            enter:function(){
+                console.log("Iam from enter function");
+                document.getElementById("first").innerHTML="Iam from enter function";
+            },
+        };
+
+        myAllfunctions.sighUp();
+        myAllfunctions.search();
+        myAllfunctions.enter();
+    </script>
+</body>
+</html>
