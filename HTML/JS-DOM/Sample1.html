@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="registration">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+        <div class="groupform">
+        <label for="fname">First Name </label>
+        <input type="text" class="pooji" id="pooji">
+        </div>
+        <button type="submit" class="submit-btn" onclick="primeryUser()">Register</button>
+        </form>
+    </div>
+        <script>
+            function primeryUser() {
+            
+            // var firstName = document.getElementById("pooji").value;
+            // console.log(firstName);
+
+            var firstName = document.getElementsByClassName("pooji")[0].value
+            console.log(firstName);
+            };
+        </script>
+</body>
+</html>

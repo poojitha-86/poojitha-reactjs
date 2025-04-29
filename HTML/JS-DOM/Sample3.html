@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Pooji">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="groupform">
+                <label for="dob">Date of birth :</label>
+                <input type="date" class="MyName" id="MyName">
+            </div>
+            <button type="button" class="submit-btn" onclick="PrimarySelector()">Upload</button>
+        </form>
+        <script>
+            function PrimarySelector(){
+                var fullname = document.getElementById("MyName").value;
+                console.log(fullname);
+
+                var fullname = document.getElementsByClassName("MyName")[0].value;
+                console.log(fullname);
+
+                var fullname = document.getElementsByTagName("input")[0].value;
+                console.log(fullname);
+
+                var fullname = document.querySelector("input").value;
+                console.log(fullname);
+
+                var fullname = document.querySelectorAll("input")[0].value;
+                console.log(fullname);
+            };
+        </script>
+    </div>
+</body>
+</html>

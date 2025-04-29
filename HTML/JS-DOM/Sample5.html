@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Indhu">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="groupform">
+                <label for="email">Email Address :</label>
+                <input type="email"  class="email"  id="email" placeholder="Enter email address">
+            </div>
+            <button type="button" class="submit-btn" onclick="firstSelector()">EnteredMail</button>
+        </form>
+        <script>
+            function firstSelector(){
+                var selectedGender = document.getElementById("email").value;
+                console.log(selectedGender);
+
+                // var EnteredMail = document.getElementsByClassName("email")[0].value;
+                // console.log( EnteredMail);
+
+                // var  EnteredMail = document.getElementsByTagName("input")[0].value;
+                // console.log( EnteredMail);
+
+                // var  EnteredMail = document.querySelector("input").value;
+                // console.log( EnteredMail);
+
+                // var  EnteredMail = document.querySelectorAll("input")[0].value;
+                // console.log ( EnteredMail);
+            };
+        </script>
+</body>
+</html>

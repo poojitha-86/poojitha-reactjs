@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Pooji">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="groupform">
+                <label for="fname">First Name :</label>
+                <input type="text" class="primary" id="primary">
+            </div>
+            <button type="button" class="submit-btn" onclick="PrimarySelector()">Register</button>
+        </form>
+        <script>
+            function PrimarySelector(){
+
+                var fullname = document.getElementById("primary").value;
+                console.log(fullname);
+
+                 var fullname = document.getElementsByClassName("primary")[0].value;
+                 console.log(fullname);
+
+                 var firstname = document.getElementsByTagName("input")[0].value;
+                 console.log(firstname);
+
+                 var secondname = document.querySelector("input").value;
+                 console.log(secondname);
+
+                 var thirdname = document.querySelectorAll("input")[0].value;
+                 console.log(thirdname);
+                };
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="poojitha">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="groupform">
+                <label for="Age">Age :</label>
+                <input type="number" class="age" id="age">  
+            </div>
+            <button type="button" class="submit-btn" onclick="PrimarySelector()">Selector</button>
+        </form>
+        <script>
+            function PrimarySelector(){
+                var selectedAge = document.getElementById("age").value;
+                console.log(selectedAge);
+
+                // var selectedAge = document.getElementsByClassName("age")[0].value;
+                // console.log(selectedAge);
+
+                // var selectedAge = document.getElementsByTagName("input")[0].value;
+                // console.log(selectedAge);
+
+                // var selectedAge = document.querySelector("input").value;
+                // console.log(selectedAge);
+
+                // var selectedAge = document.querySelectorAll("input")[0].value;
+                // console.log (selectedAge);
+            };
+        </script>
+</body>
+</html>
