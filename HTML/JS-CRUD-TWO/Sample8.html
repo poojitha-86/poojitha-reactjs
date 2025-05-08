@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+    <div id="Pooji"></div>
+    <script>
+        var images =[
+            "https://m.media-amazon.com/images/I/51GMqgTLOBL._AC_UF894,1000_QL80_.jpg",
+            "https://m.media-amazon.com/images/I/71tSX+WfWxL.jpg",
+            "https://cn.i.cdn.ti-platform.com/cnemea/content/384/showpage/tom-and-jerry/uk/showsquare.png?imwidth=420",
+        ];
+        images.forEach(function(me){
+        var Images=document.createElement("img");
+        Images.setAttribute("src",me);
+        Images.setAttribute("width","250px");
+        document.getElementById("Pooji").appendChild(Images);
+        });
+    </script>
+</body>
+</html>

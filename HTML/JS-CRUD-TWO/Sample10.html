@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" id="online"></table>
+    <script>
+        var colors = [
+            "Black",
+            "White",
+            "Peach",
+            "SkyBlue",
+            "Lavender"
+        ];
+        for(i=0;i<colors.length;i++){
+            var myTr=document.createElement("tr");
+            myTr.innerHTML=colors[i];
+            document.getElementById("online").appendChild(myTr);
+        };
+    </script>
+</body>
+</html>

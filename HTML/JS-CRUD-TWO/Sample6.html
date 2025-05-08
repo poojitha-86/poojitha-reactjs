@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  id="row" src="" alt="">
+    <div id="come"></div>
+    <script>
+        var photos=[
+        "https://cdn.vectorstock.com/i/2000v/92/08/panda-cartoon-cute-animals-vector-39469208.webp",
+        "https://i.pinimg.com/736x/ab/45/51/ab4551ae1a25886a96554c1244be395c.jpg",
+        "https://m.media-amazon.com/images/I/51P1d8NAG4L._AC_UF1000,1000_QL80_.jpg",
+        "https://www.shutterstock.com/image-vector/flat-vector-cute-cartoon-panda-600nw-2343798945.jpg",
+        "https://www.shutterstock.com/image-vector/cute-baby-panda-cartoon-on-260nw-2361816179.jpg",
+        ];
+        photos.forEach(function(me){
+            var allPhotos = document.createElement("img");
+            allPhotos.setAttribute("src",me);
+            allPhotos.setAttribute("width","200px");
+            document.getElementById("come").appendChild(allPhotos);
+        });
+    </script>
+</body>
+</html>

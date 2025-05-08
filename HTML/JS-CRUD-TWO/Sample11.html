@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+    <table id="row" border="2"></table>
+    <script>
+        var images = [
+            "https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=",
+            "br/",
+            "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg",
+            "br/",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTtKtS1S6yyxE3ERh6nBdl2uujGdRNFT9BUw&s",
+        ];
+           images.forEach(function(me){
+            var Allimages = document.createElement("img");
+            Allimages.setAttribute("src",me);
+            Allimages.setAttribute("width","300px");
+            document.getElementById("row").appendChild(Allimages);
+        });
+    </script>
+</body>
+</html>

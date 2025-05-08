@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+    <div id="throw"></div>
+    <script>
+        var images=[
+            "https://i.pinimg.com/736x/a5/9c/80/a59c8035632f38179074a8841e53c579.jpg",
+            "https://images.meesho.com/images/products/394710056/t81tm_512.webp",
+            "https://images.meesho.com/images/products/404190874/hmzxn_512.webp",
+            "https://media.istockphoto.com/id/2154467772/vector/cute-baby-krishna-vector-illustration-poster-art-print.jpg?s=612x612&w=0&k=20&c=2i-2Vdj9Sum01sC2EPxFi9kFa9ir9OQ92J9J8m1ZYPM=",
+            "https://vectorjungal.com/files/preview/960x960/11722878478nsozvvoksiogmrbo38m5zngguiaxwlnn6l2ghpfhjk985frudxnvxenae05gyrzryrs7xvewelafrdvah0hnekisxgssj1xn6gao.png",
+
+        ];
+        images.forEach(function(me){
+         var allImages=   document.createElement("img");
+         allImages.setAttribute("src",me);
+         allImages.setAttribute("width","250px");
+         document.getElementById("throw").appendChild(allImages);
+        })
+    </script>
+</body>
+</html>

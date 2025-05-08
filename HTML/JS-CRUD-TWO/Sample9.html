@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+    <div id="online"></div>
+    <script>
+        var images = [
+            "https://m.media-amazon.com/images/I/71Ffxr1fHvL.jpg",
+            "https://w0.peakpx.com/wallpaper/860/660/HD-wallpaper-chhota-bheem-yellow-background-cartoon-animated.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1SCIyfFLUA6xORpqEI_c8AAYjlHkwOXgWg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYH6fOqTm8qbhMKjO17fs3TRtEif0FF5lgSA&s",
+            "https://rukminid2.flixcart.com/image/850/1000/j752nww0/poster/j/f/q/large-chota-bhim-cartoon-comic-wallpaper-on-fine-art-paper-hd-on-original-imaergs4t3a835bp.jpeg?q=90&crop=false",
+        ];
+        images.forEach(function(me){
+        var Images=document.createElement("img");
+        Images.setAttribute("src",me);
+        Images.setAttribute("width","150px");
+        document.getElementById("online").appendChild(Images);
+        })
+    </script>
+</body>
+</html>
