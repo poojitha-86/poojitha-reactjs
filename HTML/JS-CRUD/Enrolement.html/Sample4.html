@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="column">
+            <form>
+                <label for="name" >Full Name</label>
+                <input type="text" name="name" placeholder="Enter your FullName" required/>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required/>
+
+                <label for="checkin">Check-in Date</label>
+                <input type="date" name="checkin" id="checkin" required/>
+
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" name="checkout" id="checkout" required/>
+
+                <label for="roomtype">Room Type</label>
+                <select name="room" id="room">
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <label >Additional Amenities</label>
+                <div>
+                    <label><input type="checkbox" name="amenities" value="wifi">Wifi</label>
+                    <br>
+                    <label><input type="checkbox" name="amenities" value="breakfast">Breakfast</label>
+                    <br>
+                    <label><input type="checkbox" name="amenities" value="parking">Parking</label>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="column">
+                <h1>Booking Details</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Room Type</td>
+                            <td>Action</td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Double</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Suite</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <div class="column">
+      <h1>Event Registration</h1>
+      <form >
+        <label for="name">Full Name</label>
+          <input type="text" id="fullName" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+        <button type="button" onclick="registerPerson()" id="registerBtn">
+          Register
+        </button>
+        <button type="button" onclick="updateUser()" id="update-Btn">
+          Update
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="column">
+    <h1>Registered Events</h1>
+    <table border="1">
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script>
+    var  allusers = [];
+    function registerPerson(){
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("email").value;
+
+    var user = {
+      fullName,
+      email,
+    };
+
+    allusers.push(user);
+    document.getElementById("fullName").value="";
+    document.getElementById("email").value="";
+    console.log(fullName,email);
+
+    displayUserInTable();
+    }
+    function displayUserInTable(){
+      document.querySelector("tbody").innerHTML="";
+      allusers.forEach(function(user,index){
+        var myTr=document.createElement("tr");
+        for(a in user){
+          var myTd=document.createElement("td");
+          myTd.innerHTML=user[a];
+          myTr.appendChild(myTd);
+        }
+        var editTd=document.createElement("td");
+        var editBtn=document.createElement("button");
+        editBtn.innerHTML="Edit";
+        editBtn.setAttribute("class", "edit-btn");
+        editBtn.setAttribute("onclick", "editUser(" + index + ")");
+        editTd.appendChild(editBtn);
+        myTr.appendChild(editTd);
+
+        var deleteTd = document.createElement("td");
+        var deleteBtn= document.createElement("button");
+        deleteBtn.innerHTML= "Delete";
+        deleteBtn.setAttribute("class","delete-btn");
+        deleteBtn.setAttribute("onclick","deleteUser("+ index +")");
+        deleteTd.appendChild(deleteBtn);
+        myTr.appendChild(deleteTd);
+
+        document.querySelector("tbody").appendChild(myTr);
+      });
+      }
+       displayUserInTable();
+
+       function deleteUser(i){
+        console.log("delete user called " + i );
+        allusers.splice(i,1);
+        displayUserInTable();
+       }
+      function editUser(i){
+        gIndex = i;
+        document.getElementById("fullName").value = allusers[i].fullName;
+        document.getElementById("email").value = allusers[i].email;
+
+        document.getElementById("update-Btn").style.display = "block";
+        document.getElementById("registerBtn").style.display = "none";
+      }
+      function updateUser() {
+        var fullName = document.getElementById("fullName").value;
+        var email = document.getElementById("email").value;
+
+        var user = {
+          fullName,
+          email,
+        };
+        allUsers[gIndex] = user;
+        displayUserInTable();
+        document.getElementById("fullName").value = "";
+        document.getElementById("email").value = "";
+
+        document.getElementById("update-Btn").style.display = "none";
+        document.getElementById("registerBtn").style.display = "block";
+      }
+  </script>
+</body>
+</html>

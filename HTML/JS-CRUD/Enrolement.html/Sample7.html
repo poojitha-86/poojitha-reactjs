@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="container">
+      <div id="column">
+         <h1>Job Application</h1>
+         <form>
+           <label for="fullname">Full Name</label>
+           <input type="text" name="name" placeholder="Enter your fullname" required/>
+
+           <label for="email">Email</label>
+           <input type="email" name="email" placeholder="Enter your email" required/>
+
+           <label for="number">Phone</label>
+           <input type="number" name="number" placeholder="Enter your phone number" required />
+
+
+           <label for="job-type">Job Type</label>
+           <div>
+            <label > <input type="radio" value="job-time" name="job-type">Full-Time</label>
+            <br>
+            <label><input type="radio" value="job-time" name="job-type">Part-Time</label>
+            <br>
+            <label><input type="radio" value="job-time" name="job-type">Internship</label>
+           </div>
+           <label >skills</label>
+            <div>
+            <label ><input type="checkbox" name="skills" value="JavaScript">JavaScript</label>
+            <br>
+            <label><input type="checkbox" name="skills" value="python">Python</label>
+            <br>
+            <label ><input type="checkbox" name="skills" value="React">React</label>
+          </div>
+            <button type="submit">Apply</button>
+         </form>
+      </div>
+      <div id="column">
+        <h1>Subscribes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Job Type</td>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Full-Time</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    
+                    <td>Internship</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+      </div>
+  </div>
+</body>
+</html>

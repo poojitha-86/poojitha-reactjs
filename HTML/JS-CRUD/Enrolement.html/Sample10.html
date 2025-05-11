@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label >Preferred Topics</label>
+    <br>
+    <input type="checkbox" name="topics" value="technology"/>Technology
+    <br>
+    <input type="checkbox" name="topics" value="business"/>Business
+    <br>
+    <input type="checkbox" name="topics" value="entertainment"/>Entertainment
+    <br>
+    <button type="submit" onclick="getSelectedTopics()">Get Selected Topics</button>
+
+    <label >Subscription Frequency</label>
+    <br>
+    <input type="radio" name="frequency" value="daily"/>Daily
+    <br>
+    <input type="radio" name="frequency" value="weekly"/>Weekly
+    <br>
+    <input type="radio" name="frequency" value="monthly"/>Monthly
+    <br>
+    <button type="submit" onclick="getSelectedFrequency()">Get Selected Frequency</button>
+
+    
+    <script>
+        var topics=[]
+
+        function  getSelectedTopics(){
+            var allCheckBoxes = document.getElementsByName("topics");
+            for(i=0;i<allCheckBoxes.length;i++){
+            if(allCheckBoxes[i].checked==true){
+            topics.push(allCheckBoxes[i].value);
+            }    
+            }
+            console.log(topics);    
+        }
+
+        var frequency=[]
+          function getSelectedFrequency(){
+            var allRadioBtns=document.getElementsByName("frequency");
+            for(i=0;i<allRadioBtns.length;i++){
+                if(allRadioBtns[i].value == "monthly"){
+                    allRadioBtns[i].checked=true;
+                }
+            }
+            console.log(frequency);
+           }
+    </script>
+</body>
+</html>

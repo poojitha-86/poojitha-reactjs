@@ -7,21 +7,27 @@
 </head>
 <body>
     <img src="" alt="">
-    <table id="row" border="2"></table>
+    <table id="row" border="2">
+        <tbody id="column">
+        </tbody>
+    </table>
     <script>
-        var images = [
-            "https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=",
-            "br/",
-            "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg",
-            "br/",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTtKtS1S6yyxE3ERh6nBdl2uujGdRNFT9BUw&s",
+        var subjects = [
+           "Telugu",
+           "English",
+           "Maths",
+           "Physics"
         ];
-           images.forEach(function(me){
-            var Allimages = document.createElement("img");
-            Allimages.setAttribute("src",me);
-            Allimages.setAttribute("width","300px");
-            document.getElementById("row").appendChild(Allimages);
+        var myTr=document.createElement("tr");
+        subjects.forEach(function(me){
+            for(a in me);
+            var myTd=document.createElement("td");
+            myTd.innerHTML=me;
+            myTr.appendChild(myTd);
         });
+         var tbody = document.getElementById("column").appendChild(myTr);
+        // document.tbody.appendChild(myTr);
+
     </script>
 </body>
 </html>

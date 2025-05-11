@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="container">
+      <div id="column">
+         <h1>Course Enrollment</h1>
+         <form>
+           <label for="fullname">Full Name</label>
+           <input type="text" name="name" placeholder="Enter your fullname" required/>
+
+           <label for="email">Email</label>
+           <input type="email" name="email" placeholder="Enter your email" required/>
+
+           <label for="course">Course Selection</label>
+           <select name="course" id="course" required>
+            <option value="web development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="ui-ux-design">UI/UX Design</option>
+           </select>
+
+           <label >Learning Mode</label>
+           <div>
+            <label > <input type="radio" value="online" name="mode">Online</label>
+            <br>
+            <label><input type="radio" value="offline" name="mode">Offline</label>
+           </div>
+            <button type="submit">Enroll Now</button>
+         </form>
+      </div>
+      <div id="column">
+        <h1>Subscribes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Course</td>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Web Development</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Data Science</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+      </div>
+  </div>
+</body>
+</html>

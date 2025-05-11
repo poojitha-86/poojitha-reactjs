@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="container">
+      <div id="column">
+         <h1>Subscribe to Newsletter</h1>
+         <form>
+           <label for="fullname">Full Name</label>
+           <input type="text" name="name" placeholder="Enter your fullname" required/>
+
+           <label for="email">Email</label>
+           <input type="email" name="email" placeholder="Enter your email" required/>
+
+           <label for="frequency">Subscription Frequency</label>
+           <div>
+            <label > <input type="radio" value="daily" name="frequency">Daily</label>
+            <br>
+            <label><input type="radio" value="weekly" name="frequency">Weekly</label>
+            <br>
+            <label><input type="radio" value="monthly" name="frequency">Monthly</label>
+           </div>
+           <label >Preferred Topics</label>
+            <div>
+            <label ><input type="checkbox" name="Topics" value="technology">Technology</label>
+            <br>
+            <label><input type="checkbox" name="Topics" value="business">Business</label>
+            <br>
+            <label ><input type="checkbox" name="Topics" value="entertainment">Entertainment</label>
+          </div>
+            <button type="submit">Subscribe</button>
+         </form>
+      </div>
+      <div id="column">
+        <h1>Subscribes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Frequency</td>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Weekly</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Daily</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+      </div>
+  </div>
+</body>
+</html>

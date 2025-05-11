@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var santhapet = [
+            { 
+              hName : "House1",
+              fName : "Pooji"
+            },
+            {
+            hName : "House2",
+            fName : "Jishi",
+
+            },
+            {
+            hName : "House3",
+            fName : "Kumar",
+            },
+        ];
+        var myul=document.createElement("ul");
+        santhapet.forEach(function(me){
+            for(a in me){
+            var myli=document.createElement("li");
+            myli.innerHTML= me[a];
+            myul.appendChild(myli);
+            } 
+        });
+        document.body.appendChild(myul);
+    </script>
+</body>
+</html>
