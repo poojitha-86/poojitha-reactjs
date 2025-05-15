@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Subjects</label>
+    <input type="checkbox" name="subject" value="telugu"/>Telugu
+    <input type="checkbox" name="subject" value="hindi"/>Hindi
+    <input type="checkbox" name="subject" value="english"/>English
+    <input type="checkbox" name="subject" value="maths"/>Maths
+
+    <button type="submit" onclick="getSelectedsubject()">Get Scelected Subject</button>
+
+    <script>
+        var subjects = [];
+
+        function getSelectedsubject(){
+            var allCheckboxes=document.getElementsByName("subject");
+            for(i=0;i<allCheckboxes.length;i++){
+             if(allCheckboxes[i].checked == true){
+                subjects.push(allCheckboxes[i].value);
+              }
+            }
+            console.log(subjects);
+        }
+    </script>
+</body>
+</html>

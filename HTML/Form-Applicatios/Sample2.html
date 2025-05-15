@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label >Subscription Frequency</label>
+        <br>
+        <input type="radio" value="daily" name="frequency"/>daily
+         <br>
+         <input type="radio" value="weekly" name="frequency"/>Weekly
+         <br>
+         <input type="radio" value="monthly" name="frequency"/>Monthly
+         <br>
+         <button type="submit" onclick="getSelectedFrequency()">Submit</button>
+
+    <script>
+       
+       var  myFrequency= [];
+
+       function getSelectedFrequency(){
+        var allRadioBtns = document.getElementsByTagName("frequency");
+        for(i=0; i< allRadioBtns.length; i++){
+            if(allRadioBtns[i].value == "monthly"){
+                allRadioBtns[i].checked= true;
+            }
+        }
+        console.log(allRadioBtns)
+       }
+    </script>
+</body>
+</html>
