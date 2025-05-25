@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Students = [];
+
+        function getDataFromServer(){
+            return new Promise(function(resolve,reject){
+                var getDataDetails = new XMLHttpRequest();
+                getDataDetails.onreadystatechange =  function (){
+                    if(
+                        getDataDetails.readyState === 4 &&
+                        getDataDetails.status === 200
+                    ){
+                        Students = JSON.parse(getDataDetails.response);
+                        resolve();
+                    }
+                };
+
+                getDataDetails.open(
+                    "GET","https://jsonplaceholder.typicode.com/users"
+                );
+                getDataDetails.send();
+            });
+        }
+        function displayData(){
+            console.log(Students);
+        }
+
+        getDataFromServer();
+
+        async function  handleAsyncData() {
+            var response = await getDataFromServer();
+            displayData();
+            
+        }
+
+        handleAsyncData();
+    </script>
+</body>
+</html>
