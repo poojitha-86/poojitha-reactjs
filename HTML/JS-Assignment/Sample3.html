@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sample2.css">
+</head>
+<body>
+    <div class="form-container">
+      <h2>Recipe Collection</h2>
+      <form id="task-form">
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="ingredients">Ingredients :</label>
+          <textarea
+            id="ingredients"
+            name="ingredients"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="instructions">Instructions :</label>
+          <input type="text" id="instructions" name="instructions" required />
+        </div>
+        <button type="submit" onclick="registerUser()" id="registerBtn">Add Recipe</button>
+        <button type="button" onclick="updateUser()" id="updateBtn">Update</button>
+      </form>
+    </div>
+    <div id="recipe-collection">
+      <h3>Recipe Collection</h3>
+      <table id="recipe-collection">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Ingredients</th>
+            <th>Instructions</th>
+            <th>Actions</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script>
+      var allUsers = [];
+      function registerUser() {
+        var Name = document.getElementById("name").value;
+        var ingredients = document.getElementById("ingredients").value;
+        var instructions = document.getElementById("instructions").value;
+
+        var user = {
+          name,
+          ingredients,
+          instructions,
+        };
+
+        allUsers.push(user);
+        document.getElementById("name").value = "";
+        document.getElementById("ingredients").value = "";
+        document.getElementById("instructions").value = "";
+        console.log(name, ingredients,instructions);
+
+        displayUserInTable();
+      }
+
+      function displayUserInTable() {
+        document.querySelector("tbody").innerHTML = "";
+        allUsers.forEach(function (user, index) {
+          var myTr = document.createElement("tr");
+          for (a in user) {
+            var myTd = document.createElement("td");
+            myTd.innerHTML = user[a];
+            myTr.appendChild(myTd);
+          }
+
+          var editTd = document.createElement("td");
+          var editBtn = document.createElement("button");
+          editBtn.innerHTML = "Edit";
+          editBtn.setAttribute("class", "edit-btn");
+          editBtn.setAttribute("onclick", "editUser(" + index + ")");
+          editTd.appendChild(editBtn);
+          myTr.appendChild(editTd);
+
+          var deleteTd = document.createElement("td");
+          var deleteBtn = document.createElement("button");
+          deleteBtn.setAttribute("class", "delete-btn");
+          deleteBtn.setAttribute("onclick", "deleteUser(" + index + ")");
+          deleteBtn.innerHTML = "Delete";
+          deleteTd.appendChild(deleteBtn);
+          myTr.appendChild(deleteTd);
+
+          document.querySelector("tbody").appendChild(myTr);
+        });
+      }
+      displayUserInTable();
+
+      function deleteUser(i) {
+        console.log("delete User called" + i);
+        allUsers.splice(i, 1);
+        displayUserInTable();
+      }
+
+      function editUser(i) {
+        gIndex = i;
+        document.getElementById("name").value = allUsers[i].name;
+        document.getElementById("ingredients").value = allUsers[i].ingredients;
+        document.getElementById("instructions").value = allUsers[i].instructions;
+
+        document.getElementById("updateBtn").style.display = "block";
+        document.getElementById("registerBtn").style.display = "none";
+      }
+
+      function updateUser() {
+        var name = document.getElementById("name").value;
+        var ingredients = document.getElementById("ingredients").value;
+        var instructions = document.getElementById("instructions").value;
+
+        var user = {
+          name,
+          ingredients,
+          instructions
+        };
+
+        allUsers[gIndex] = user;
+        displayUserInTable();
+        document.getElementById("name").value = "";
+        document.getElementById("ingredients").value = "";
+        document.getElementById("instructions").value = "";
+
+        document.getElementById("updateBtn").style.display = "none";
+        document.getElementById("registerBtn").style.display = "block";
+      }
+    </script>
+</body>
+</html>
