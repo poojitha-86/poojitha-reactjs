@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post CRUD</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    .post-card {
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      background: #f0f8ff;
+    }
+    .post-card h3 { margin: 0; }
+    .btn { margin-right: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Blog Post Form</h2>
+  <form id="blogForm">
+    <input type="hidden" id="postIndex">
+    <label>Title: <input type="text" id="title" required></label><br><br>
+    <label>Content:<br><textarea id="content" rows="4" cols="40" required></textarea></label><br><br>
+    <label>Author: <input type="text" id="author" required></label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+  <h2>Blog Posts</h2>
+  <div id="postsContainer"></div>
+
+  <script src="Script5.js"></script>
+</body>
+</html>

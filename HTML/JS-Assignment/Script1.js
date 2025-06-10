@@ -5,7 +5,7 @@ const form = document.getElementById("employee-form");
 const saveBtn = document.getElementById("save-btn");
 const updateBtn = document.getElementById("update-btn");
 
-// Handle Save
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
@@ -24,7 +24,7 @@ form.addEventListener("submit", function (e) {
   displayEmployees();
 });
 
-// Handle Update
+
 updateBtn.addEventListener("click", function () {
   const name = document.getElementById("name").value.trim();
   const department = document.getElementById("department").value.trim();
@@ -41,7 +41,7 @@ updateBtn.addEventListener("click", function () {
   form.reset();
   editIndex = null;
 
-  // Toggle buttons
+
   saveBtn.style.display = "inline-block";
   updateBtn.style.display = "none";
 
@@ -55,7 +55,7 @@ function editEmployee(index) {
   document.getElementById("salary").value = emp.salary;
   editIndex = index;
 
-  // Toggle buttons
+
   saveBtn.style.display = "none";
   updateBtn.style.display = "inline-block";
 }

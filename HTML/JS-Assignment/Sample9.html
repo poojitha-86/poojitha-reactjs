@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie CRUD App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        form,
+        table {
+            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px #ccc;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+        }
+
+        td,
+        input,
+        select {
+            padding: 8px;
+        }
+
+        button {
+            margin-right: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Movie Entry Form</h2>
+    <form id="movieForm">
+        <input type="hidden" id="editIndex">
+        <label>Title: </label>
+        <input type="text" id="title" required>
+        <label>Gender:</label>
+        <input type="text" id="gender" required>
+        <label>Release Year:</label>
+        <input type="number" id="year" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <h2>Movie List</h2>
+    <table id="movieTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Gender</th>
+                <th>Release Year</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="Script4.js"></script>
+</body>
+
+</html>
