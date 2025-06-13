@@ -5,6 +5,25 @@ const form = document.getElementById("employee-form");
 const saveBtn = document.getElementById("save-btn");
 const updateBtn = document.getElementById("update-btn");
 
+function displayEmployees() {
+  const list = document.getElementById("employee-list");
+  list.innerHTML = "";
+
+  employees.forEach((emp, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${emp.name}</td>
+      <td>${emp.department}</td>
+      <td>₹${emp.salary.toFixed(2)}</td>
+      <td>
+        <button class="edit-btn" onclick="editEmployee(${index})">Edit</button>
+        <button class="delete-btn" onclick="deleteEmployee(${index})">Delete</button>
+      </td>
+    `;
+    list.appendChild(row);
+  });
+}
+
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -67,24 +86,4 @@ function deleteEmployee(index) {
     displayEmployees();
   }
 }
-
-function displayEmployees() {
-  const list = document.getElementById("employee-list");
-  list.innerHTML = "";
-
-  employees.forEach((emp, index) => {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>${emp.name}</td>
-      <td>${emp.department}</td>
-      <td>₹${emp.salary.toFixed(2)}</td>
-      <td>
-        <button class="edit-btn" onclick="editEmployee(${index})">Edit</button>
-        <button class="delete-btn" onclick="deleteEmployee(${index})">Delete</button>
-      </td>
-    `;
-    list.appendChild(row);
-  });
-}
-
 displayEmployees();
