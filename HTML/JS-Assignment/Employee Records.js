@@ -78,8 +78,6 @@ function editEmployee(index) {
   saveBtn.style.display = "none";
   updateBtn.style.display = "inline-block";
 }
-
-
 function deleteEmployee(index) {
   if (confirm("Are you sure you want to delete this employee?")) {
     employees.splice(index, 1);
