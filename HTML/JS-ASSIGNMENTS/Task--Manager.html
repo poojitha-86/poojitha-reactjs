@@ -60,7 +60,7 @@
         <form id="task-form">
             <div class="form-group">
             <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required onkeyup="validateForm()"/>
+            <input type="text" id="title" name="title" required onkeyup="validateForm()">
             </div>
             <div class="form-group">
                 <label for="description">Description:</label>
@@ -70,7 +70,7 @@
                 <label for="due-date">Due Date :</label>
                 <input type="date" id="due-date" name="due-date" required onkeyup="validateForm()"/>
             </div>
-            <button type="button" disabled onclick="addTask()">Add Task</button>
+            <button id="addBtn" type="button" disabled onclick="addTask()">Add Task</button>
         </form>
     </div>
     <div id="task-list">
@@ -84,13 +84,15 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+            <tbody class="task-tbody" ></tbody>
         </table>
     </div>
     <script>
         var allTasks = JSON.parse(localStorage.getItem("allTasks")) ||[];
 
         function displayTasks(){
-            let tableBody = document.getElementById("task-table");
+            let tableBody = document.getElementById("task-tbody");
+
             tableBody.innerHTML = "";
             allTasks.forEach((task,index)=>{
                 let row= tableBody.insertRow();
@@ -114,7 +116,7 @@
             let isValid = fields.every(
                 (field)=> document.getElementById(field).value.trim() !==""
             );
-            document.querySelector("button").disabled = !isValid;
+             document.querySelector("button").disabled = !isValid;
         }
 
         function addTask(){
@@ -128,14 +130,14 @@
             localStorage.setItem("allTasks",JSON.stringify(allTasks));
             displayTasks();
             document.getElementById("task-form").reset();
-            document.querySelector("button").disabled = true;
+            document.querySelector("addBtn").disabled = true;
         }
 
         function editTask(index){
             let task = allTasks[index];
             title: document.getElementById("title").value = task.title;
-            description:document.getElementById("description").value = task.description;
-            dueDate:document.getElementById("due-date").value =task.dueDate;
+            Ddescription: document.getElementById("description").value = task.description;
+            dueDate: document.getElementById("due-date").value =task.dueDate;
 
             allTasks.splice(index,1);
             localStorage.setItem("allTasks", JSON.stringify(allTasks));
@@ -148,7 +150,7 @@
             displayTasks();
         }
 
-        displayTasks()
+        
     </script>
 </body>
 </html>
