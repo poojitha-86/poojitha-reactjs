@@ -33,9 +33,7 @@
         border: none;
         cursor: pointer;
       }
-      button:hover {
-        background-color: #218838;
-      }
+
       #task-list {
         margin-top: 20px;
       }
@@ -51,6 +49,11 @@
       }
       th {
         background-color: #f2f2f2;
+      }
+      .disabledBtn{
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
       }
     </style>
 </head>
@@ -70,7 +73,7 @@
                 <label for="due-date">Due Date :</label>
                 <input type="date" id="due-date" name="due-date" required onkeyup="validateForm()"/>
             </div>
-            <button id="addBtn" type="button" disabled onclick="addTask()">Add Task</button>
+            <button id="addBtn" type="button" disabled class="disabledBtn" onclick="addTask()">Add Task</button>
         </form>
     </div>
     <div id="task-list">
@@ -84,7 +87,7 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody class="task-tbody" ></tbody>
+            <tbody id="task-tbody" ></tbody>
         </table>
     </div>
     <script>
@@ -117,6 +120,13 @@
                 (field)=> document.getElementById(field).value.trim() !==""
             );
              document.querySelector("button").disabled = !isValid;
+             if(isValid){
+              document.getElementById("submitBtn").removeAttribute("class","disabledBtn");
+             }else {
+          document
+            .getElementById("submitBtn")
+            .setAttribute("class", "disabledBtn");
+        }
         }
 
         function addTask(){
@@ -131,6 +141,7 @@
             displayTasks();
             document.getElementById("task-form").reset();
             document.querySelector("addBtn").disabled = true;
+            validateForm();
         }
 
         function editTask(index){
@@ -142,6 +153,7 @@
             allTasks.splice(index,1);
             localStorage.setItem("allTasks", JSON.stringify(allTasks));
             displayTasks();
+            validateForm();
         }
 
         
@@ -150,7 +162,8 @@
             localStorage.setItem("allTasks",JSON.stringify(allTasks));
             displayTasks();
         }
-
+        
+        displayTasks();
         
     </script>
 </body>
