@@ -32,9 +32,7 @@
         border: none;
         cursor: pointer;
       }
-      button:hover {
-        background-color: #0056b3;
-      }
+      
       #book-list {
         margin-top: 20px;
       }
@@ -50,6 +48,11 @@
       }
       th {
         background-color: #f2f2f2;
+      }
+      .disabledBtn{
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
       }
     </style>
 </head>
@@ -94,7 +97,7 @@
         tableBody.innerHTML ="";
         allBooks.forEach((book,index)=>{
             let row= tableBody.insertRow();
-            Object.value(book).forEach((val) =>{
+            Object.values(book).forEach((val) =>{
                 let cell = row.insertCell();
                 cell.textContent = val;
             });
@@ -114,11 +117,16 @@
             (listofBooks) =>document.getElementById(listofBooks).value.trim() !==""
         );
         document.getElementById("submitBtn").disabled = !isValid;
+        if(isValid){
+          document.getElementById("submitBtn").removeAttribute("class","disabledBtn");
+        }else{
+          document.getElementById("submitBtn").setAttribute("class","disabledBtn");
+        }
        }
        function addBook(){
         let book = {
-            title : document.getElementById("id").value,
-            author : document.getElementById("name").value,
+            title : document.getElementById("title").value,
+            author : document.getElementById("author").value,
             isbn : document.getElementById("isbn").value,
         };
 
@@ -127,7 +135,7 @@
         displayBooks();
         document.getElementById("book-form").reset();
         document.querySelector("button").disabled = true;
-
+        validateForm();
        }
        function editBook(index){
         let book = allBooks[index];
