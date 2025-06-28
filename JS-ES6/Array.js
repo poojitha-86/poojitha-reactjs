@@ -12,7 +12,7 @@ const [
 ] = numbers;
 
 console.log(
-     arrayFirstElement,
+    arrayFirstElement,
     arraySecondElement,
     arrayThirdElement,
     arrayFourthElemt,
